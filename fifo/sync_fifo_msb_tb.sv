@@ -14,14 +14,14 @@ module tb();
         .WIDTH	(8),
         .DEPTH	(16)
     ) dut (
-        .clk	(clk),
-        .rst_n	(rst_n),
-        .wr_en	(wr_en),
-        .rd_en	(rd_en),
+        .clk	 (clk),
+        .rst_n	 (rst_n),
+        .wr_en	 (wr_en),
+        .rd_en	 (rd_en),
         .wr_data (wr_data),
         .rd_data (rd_data),
-        .full	(full),
-        .empty	(empty)
+        .full	 (full),
+        .empty	 (empty)
     );
     
     initial begin
@@ -41,7 +41,6 @@ module tb();
             end
         end
         @(posedge clk) wr_en = 0;
-
         #40 $finish;
     end
     
