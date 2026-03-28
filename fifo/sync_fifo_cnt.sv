@@ -31,6 +31,7 @@ module sync_fifo_counter #(
                 mem[wr_ptr] <= wr_data;
                 wr_ptr      <= wr_ptr + 1'b1;
             end
+            
             // Read
             if (!empty && rd_en) begin
                 rd_data <= mem[rd_ptr];
