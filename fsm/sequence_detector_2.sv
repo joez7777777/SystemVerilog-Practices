@@ -1,5 +1,5 @@
 // Task: detect 101101 and 101001
-module seq_detector_2.sv (
+module seq_detector_2 (
     input logic clk,
     input logic rst_n,
     input logic in,
