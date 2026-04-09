@@ -1,12 +1,12 @@
 // Task: Building a Moorse FSM vending machine. The machine only accepts nickel, dime, and quarter.
-module vending_machine #(
+module vending_machine_2 #(
     parameter STOCK  = 5,
     parameter PRICE_A     = 65,
     parameter PRICE_B     = 90,
     parameter PRICE_C     = 40,
     parameter MAX_CREDIT  = 125,
     parameter TIMEOUT_MAX = 20
-)(
+) (
     input  logic        clk,
     input  logic        rst_n,
 
